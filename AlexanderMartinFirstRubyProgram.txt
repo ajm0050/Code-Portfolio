@@ -1,0 +1,65 @@
+$fileLoc = "C:
+
+class Student
+	def initialize(num,name)
+		@aNo = num
+		@studentName = name
+	end
+	def aNo
+		@aNo
+	end
+	def studentName
+		@studentName
+	end
+end
+	
+class Course
+	def initialize(num,name)
+		@crn = num
+		@courseName = name
+	end
+	def crn
+		@crn
+	end
+	def courseName
+		@courseName
+	end
+end
+
+$studentArr = Array.new
+$courseArr = Array.new
+$relationArr = Array.new
+$inputMode = 0
+
+fileArr = IO.readlines("")
+fileArr.each do |i|
+	if i == ("" || "\n")
+		inputMode++
+		next
+	end
+	
+	if inputMode = 0
+		tempArr = i.split(" ")
+		$studentArr.push(Student.new(tempArr[0].chomp,tempArr[1].chomp)
+	end
+	
+	if inputMode = 1
+		tempArr = i.split(" ")
+		$courseArr.push(Course.new(tempArr[0].chomp,tempArr[1].chomp)
+	end
+
+	if inputMode = 2
+		$relationArr = Array.new(studentArr.length){Array.new(courseArr.length,false)}
+		tempArr = i.split(" ")
+		$studentIndex = studentArr.find_index{ |j| j.aNo == tempArr[0]}
+		$courseIndex = courseArr.find_index{ |j| j.crn == tempArr[1]}
+		
+		if (studentIndex != nil && courseIndex != nil)
+			relationArr[studentIndex,courseIndex] = true
+		else
+			puts "Index in relation array does not exist."
+		end
+	end
+end
+		
+	
