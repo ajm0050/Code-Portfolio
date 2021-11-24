@@ -1,4 +1,4 @@
-# Code-Protfolio
+# Code-Portfolio
 Here I have uploaded a few recent programming assignment submissions.
 The CS370 project was for my Intro to Computer Networks and is a client/server messenger program combo.
 The CS485 project was for my Computer and Software Security and is a Vigenere Cipher program that enciphers and deciphers using a three character key and also breaks the cipher using a brute force attack.
